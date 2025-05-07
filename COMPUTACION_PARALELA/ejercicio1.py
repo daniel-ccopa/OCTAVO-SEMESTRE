@@ -1,4 +1,7 @@
-'''
+''''''
+#########################################################################################
+############################### EJERCICIO 1 #############################################
+#########################################################################################
 # Suma de elementos de una lista 
 # Taxonomia SISD.
 lista = [1,2,3,4,5,6,7,8,9,10]
@@ -11,6 +14,9 @@ def suma(lista):
 
 print(suma(lista))
 
+#########################################################################################
+############################### EJERCICIO 2 #############################################
+#########################################################################################
 # Suma de dos arreglos
 # Taxonomia SIMD.
 import numpy as np
@@ -18,8 +24,10 @@ arreglo1 = np.array([1,2,3,4,5])
 arreglo2 = np.array([6,7,8,9,10])
 arreglo3 = arreglo1 + arreglo2
 print(arreglo3)
-'''
 
+#########################################################################################
+############################### EJERCICIO 3 #############################################
+#########################################################################################
 # Múltiples algoritmos de verificación sobre los mismos datos
 # Taxonomia MISD
 data = 10
@@ -53,12 +61,10 @@ else:
     print("Los resultados son diferentes")
 
 
-
-
-
-
-
 ''''''
+#########################################################################################
+############################### EJERCICIO 4 #############################################
+#########################################################################################
 # Procesamiento paralelo de una lista de tareas 
 # Taxonomia MIMD.
 from multiprocessing import Pool
@@ -69,6 +75,7 @@ def proceso(tarea):
 procesamiento = multiprocessing.Pool()
 procesamiento.map(proceso, tareas)
 
+# otra forma de hacerlo
 from multiprocessing import Pool
 print(Pool().map(lambda x: x**2, ["A", "B", "C", "D"]))
 
@@ -83,7 +90,9 @@ if __name__ == '__main__':
     for resultado in resultados:
         print(resultado)
 
-
+#########################################################################################
+############################### EJERCICIO 5 #############################################
+#########################################################################################
 # Sumar un valor a cada elemento de un arreglo 
 # Taxonomia SIMD.
 # Usando numpy
@@ -97,6 +106,9 @@ for i in range(len(arreglo)):
     arreglo[i] += 1
 print(arreglo)
 
+#########################################################################################
+############################### EJERCICIO 6 #############################################
+#########################################################################################
 # Contar la frecuencia de palabras en diferentes partes de un texto 
 # Taxonomia MIMD.
 texto = "Hola mundo. Hola a todos. Hola a todos los que están aquí."
@@ -109,7 +121,9 @@ for palabra in palabras:
         frecuencia[palabra] = 1
 print(frecuencia)
 
-
+#########################################################################################
+############################### EJERCICIO 7 #############################################
+#########################################################################################
 # Calcular la factorial de un número 
 # Taxonomia SISD.
 def factorial(n):
@@ -120,6 +134,9 @@ def factorial(n):
 
 print(factorial(5))
 
+#########################################################################################
+############################### EJERCICIO 8 #############################################
+#########################################################################################
 # Calcular la longitud de una cadena usando diferentes métodos
 # Taxonomia SIMD.
 cadena = "Hola mundo"
